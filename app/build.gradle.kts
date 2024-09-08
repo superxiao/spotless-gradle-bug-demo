@@ -9,7 +9,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
-    id("com.diffplug.spotless") version "7.0.0.BETA2"
+    // id("com.diffplug.spotless") version "7.0.0.BETA2"
 }
 
 repositories {
@@ -44,6 +44,7 @@ application {
     mainClass = "org.example.App"
 }
 
+/*
 spotless {
     // ratchetFrom("origin/main")
     java {
@@ -51,3 +52,4 @@ spotless {
         target("src/*/java/**/*.java")
     }
 }
+*/
