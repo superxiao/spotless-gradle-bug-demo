@@ -45,7 +45,7 @@ application {
 }
 
 spotless {
-    ratchetFrom("origin/main")
+    // ratchetFrom("origin/main")
     java {
         palantirJavaFormat("2.47.0").formatJavadoc(true)
         target("src/*/java/**/*.java")
