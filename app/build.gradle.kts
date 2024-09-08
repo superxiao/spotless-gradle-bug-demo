@@ -9,6 +9,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+    id("com.diffplug.spotless") version "7.0.0.BETA2"
 }
 
 repositories {
@@ -41,4 +42,12 @@ java {
 application {
     // Define the main class for the application.
     mainClass = "org.example.App"
+}
+
+spotless {
+    ratchetFrom("origin/main")
+    java {
+        palantirJavaFormat("2.47.0").formatJavadoc(true)
+        target("src/*/java/**/*.java")
+    }
 }
