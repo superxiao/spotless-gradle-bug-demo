@@ -46,7 +46,7 @@ application {
 
 
 spotless {
-    // ratchetFrom("origin/main")
+    ratchetFrom("origin/main")
     java {
         googleJavaFormat()
     }
